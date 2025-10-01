@@ -16,10 +16,8 @@ const Navigation = () => {
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center gap-2 group">
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center transition-transform group-hover:scale-105">
-              <Building2 className="w-6 h-6 text-white" />
-            </div>
+          <Link to="/" className="flex items-center group">
+              <img src="/logo-petz.svg" width={80} height={80} />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">Petz International</span>
               <span className="text-xs text-muted-foreground">Property Management</span>
