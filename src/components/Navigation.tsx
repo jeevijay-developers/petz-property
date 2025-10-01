@@ -21,7 +21,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <Link to="/" className="flex items-center group" onClick={handleNavClick}>
-              <img src="/logo-petz.svg" width={80} height={80} />
+              <img src="/logo-petz.png" width={80} height={80} />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">Petz International</span>
               <span className="text-xs text-muted-foreground">Property Management</span>
