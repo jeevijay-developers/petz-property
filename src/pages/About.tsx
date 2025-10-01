@@ -25,8 +25,8 @@ const About = () => {
       {/* Header */}
       <section className="bg-gradient-to-br from-primary to-accent py-20 text-white">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4 text-center">About Us</h1>
-          <p className="text-xl text-center text-white/90 max-w-3xl mx-auto">
+          <h1 className="text-5xl font-bold mb-4 text-center" data-aos="fade-down">About Us</h1>
+          <p className="text-xl text-center text-white/90 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
             Professional property management solutions for London and beyond
           </p>
         </div>
@@ -35,7 +35,7 @@ const About = () => {
       {/* Who We Are */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto">
+          <div className="max-w-4xl mx-auto" data-aos="fade-up">
             <h2 className="text-4xl font-bold text-foreground mb-6">Who We Are</h2>
             <p className="text-lg text-muted-foreground leading-relaxed mb-8">
               Petz International Limited is a London-based property management firm providing professional solutions to both residential landlords and commercial property owners. With years of expertise in the UK property market, we combine local knowledge, innovative systems, and a customer-first approach to ensure every property we manage performs at its best.
@@ -48,7 +48,7 @@ const About = () => {
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
-            <Card className="border-none shadow-lg">
+            <Card className="border-none shadow-lg" data-aos="fade-up" data-aos-delay="100">
               <CardContent className="p-8">
                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6">
                   <Eye className="w-7 h-7 text-white" />
@@ -60,7 +60,7 @@ const About = () => {
               </CardContent>
             </Card>
 
-            <Card className="border-none shadow-lg">
+            <Card className="border-none shadow-lg" data-aos="fade-up" data-aos-delay="200">
               <CardContent className="p-8">
                 <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6">
                   <Target className="w-7 h-7 text-white" />
@@ -93,10 +93,10 @@ const About = () => {
       {/* Who We Serve */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <h2 className="text-4xl font-bold text-center mb-12">Who We Serve</h2>
+          <h2 className="text-4xl font-bold text-center mb-12" data-aos="fade-up">Who We Serve</h2>
           <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {clients.map((client, index) => (
-              <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow">
+              <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay={index * 100}>
                 <CardContent className="p-6">
                   <div className="w-12 h-12 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-4">
                     <client.icon className="w-6 h-6 text-white" />

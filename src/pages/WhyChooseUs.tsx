@@ -42,8 +42,8 @@ const WhyChooseUs = () => {
       {/* Header */}
       <section className="bg-gradient-to-br from-primary to-accent py-20 text-white">
         <div className="container mx-auto px-4">
-          <h1 className="text-5xl font-bold mb-4 text-center">Why Choose Us</h1>
-          <p className="text-xl text-center text-white/90 max-w-3xl mx-auto">
+          <h1 className="text-5xl font-bold mb-4 text-center" data-aos="fade-down">Why Choose Us</h1>
+          <p className="text-xl text-center text-white/90 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
             Trust, transparency, and results - the pillars of our service
           </p>
         </div>
@@ -52,7 +52,7 @@ const WhyChooseUs = () => {
       {/* Main Content */}
       <section className="py-20">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
             <p className="text-xl text-muted-foreground leading-relaxed">
               When you choose Petz International Limited, you choose trust, transparency, and results. Our clients see us not just as a property manager, but as a strategic partner in their property journey.
             </p>
@@ -60,7 +60,7 @@ const WhyChooseUs = () => {
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
             {reasons.map((reason, index) => (
-              <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow">
+              <Card key={index} className="border-none shadow-lg hover:shadow-xl transition-shadow" data-aos="fade-up" data-aos-delay={index * 100}>
                 <CardContent className="p-8">
                   <div className="w-14 h-14 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mb-6">
                     <reason.icon className="w-7 h-7 text-white" />
@@ -82,7 +82,7 @@ const WhyChooseUs = () => {
       {/* CTA Section */}
       <section className="py-20 bg-secondary/30">
         <div className="container mx-auto px-4">
-          <Card className="max-w-4xl mx-auto border-none shadow-xl bg-gradient-to-br from-primary to-accent text-white">
+          <Card className="max-w-4xl mx-auto border-none shadow-xl bg-gradient-to-br from-primary to-accent text-white" data-aos="zoom-in">
             <CardContent className="p-12 text-center">
               <h2 className="text-3xl md:text-4xl font-bold mb-4">
                 Ready to Experience Professional Property Management?
@@ -90,7 +90,7 @@ const WhyChooseUs = () => {
               <p className="text-xl mb-8 text-white/90 max-w-2xl mx-auto">
                 Join the growing number of satisfied clients who trust us with their property investments
               </p>
-              <Link to="/contact">
+              <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
                   Get Started Today
                 </Button>

@@ -12,11 +12,15 @@ const Navigation = () => {
     { path: "/contact", label: "Contact" },
   ];
 
+  const handleNavClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-border shadow-sm">
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
-          <Link to="/" className="flex items-center group">
+          <Link to="/" className="flex items-center group" onClick={handleNavClick}>
               <img src="/logo-petz.svg" width={80} height={80} />
             <div className="flex flex-col">
               <span className="text-xl font-bold text-foreground">Petz International</span>
@@ -29,6 +33,7 @@ const Navigation = () => {
               <Link
                 key={item.path}
                 to={item.path}
+                onClick={handleNavClick}
                 className={`text-sm font-medium transition-colors hover:text-primary ${
                   location.pathname === item.path
                     ? "text-primary"

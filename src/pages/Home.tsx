@@ -44,19 +44,19 @@ const Home = () => {
         </div>
         
         <div className="relative z-10 container mx-auto px-4 text-center text-white">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight">
+          <h1 className="text-5xl md:text-6xl font-bold mb-6 leading-tight" data-aos="fade-up">
             Your Partner in Property Care<br />and Asset Growth
           </h1>
-          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white/95">
+          <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto text-white/95" data-aos="fade-up" data-aos-delay="100">
             Professional property management services in London, delivering peace of mind and maximizing value for landlords and investors
           </p>
-          <div className="flex gap-4 justify-center">
-            <Link to="/services">
+          <div className="flex gap-4 justify-center" data-aos="fade-up" data-aos-delay="200">
+            <Link to="/services" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
                 Our Services
               </Button>
             </Link>
-            <Link to="/contact">
+            <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
               <Button size="lg" variant="outline" className="text-lg px-8 py-6 bg-white/10 text-white border-white hover:bg-white hover:text-primary">
                 Get in Touch
               </Button>
@@ -68,7 +68,7 @@ const Home = () => {
       {/* Welcome Section */}
       <section className="py-20 bg-gradient-to-b from-white to-secondary/30">
         <div className="container mx-auto px-4">
-          <div className="max-w-4xl mx-auto text-center mb-16">
+          <div className="max-w-4xl mx-auto text-center mb-16" data-aos="fade-up">
             <h2 className="text-4xl font-bold text-foreground mb-6">
               Welcome to Petz International Limited
             </h2>
@@ -79,7 +79,7 @@ const Home = () => {
 
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             {features.map((feature, index) => (
-              <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow">
+              <Card key={index} className="border-none shadow-md hover:shadow-lg transition-shadow" data-aos="fade-up" data-aos-delay={index * 100}>
                 <CardContent className="pt-8 text-center">
                   <div className="w-16 h-16 rounded-full bg-gradient-to-br from-primary to-accent flex items-center justify-center mx-auto mb-4">
                     <feature.icon className="w-8 h-8 text-white" />
@@ -91,7 +91,7 @@ const Home = () => {
             ))}
           </div>
 
-          <Card className="bg-secondary/50 border-none">
+          <Card className="bg-secondary/50 border-none" data-aos="fade-up" data-aos-delay="300">
             <CardContent className="p-8">
               <h3 className="text-2xl font-bold mb-6 text-center">Why Clients Choose Us</h3>
               <div className="grid md:grid-cols-2 gap-4">
@@ -109,14 +109,14 @@ const Home = () => {
 
       {/* CTA Section */}
       <section className="py-16 bg-gradient-to-br from-primary to-accent text-white">
-        <div className="container mx-auto px-4 text-center">
+        <div className="container mx-auto px-4 text-center" data-aos="fade-up">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Let us take care of your property
           </h2>
           <p className="text-xl mb-8 text-white/90">
             While you focus on your future
           </p>
-          <Link to="/contact">
+          <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
             <Button size="lg" variant="secondary" className="text-lg px-8 py-6">
               Contact Us Today
             </Button>
